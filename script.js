@@ -1,6 +1,6 @@
 const numbers = document.querySelectorAll(".number")
 number.forEach ((number) => {
-  number.addEventListener("click", (event) => {
+  number.addEventListener("click", () => {
    console.log("number is pressed")
   })
 })
