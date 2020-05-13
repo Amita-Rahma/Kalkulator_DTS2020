@@ -96,3 +96,10 @@ decimal.addEventListener('click', (event) => {
  updateScreen(currentNumber)
 })
 
+const inputOperator = (operator) => {
+ if (calculationOperator ==='') {
+  prevNumber = currentNumber
+ }
+ calculationOperator = operator
+ currentNumber = '0'
+}
