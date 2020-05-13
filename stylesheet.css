@@ -36,3 +36,9 @@ button{
 .operator, .equal-sign{
   background-color: orange;
 }
+button:hover {
+  background-color: darkgrey;
+}
+.operate:hover, . equal-sign:hover {
+  background-color: darkorange;
+}
