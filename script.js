@@ -41,16 +41,16 @@ const calculate = () => {
  let result = ''
  switch(calculationOperator) {
   case "+" :
-   result = prevNumber + currentNumber
+   result = parseInt(prevNumber) + parseInt(currentNumber)
    break
   case "-" :
-   result = prevNumber - currentNumber
+   result = parseInt(prevNumber) - parseInt(currentNumber)
    break
   case "*" :
-   result = prevNumber * currentNumber
+   result = parseInt(prevNumber) * parseInt(currentNumber)
    break
   case "/" :
-   result = prevNumber / currentNumber
+   result = parseInt(prevNumber) / parseInt(currentNumber)
    break
   default:
    break
@@ -59,3 +59,19 @@ const calculate = () => {
  calculationOperation = ''
 }
 
+const clearBtn = document.querySelector('.all-clear')
+
+clearBtn.addEventListener('click', () => {
+ console.log('AC button is pressed')
+})
+
+const clearAll = () => {
+ prevNumber = ''
+ calculationOperator = ''
+ currentNumber = '0'
+}
+clearBtn.addEventListener('click', () => {
+ clearAll()
+ updateScreen(currentNumber)
+})
+})
