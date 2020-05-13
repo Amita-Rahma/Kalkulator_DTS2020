@@ -1,7 +1,9 @@
-let prevNumber = ''
-let calculationOperator = ''
-let currentNumber = '0'
-
+const numbers = document.querySelectorAll(".number")
+number.forEach ((number) => {
+  number.addEventListener("click", (event) => {
+   console.log("number is pressed")
+  })
+})
 const calculatorScreen = document.querySelector('.calculator-screen')
 
 const updateScreen = (number) => {
@@ -23,7 +25,9 @@ number.forEach ((number) => {
   updateScreen (currentNumber)
   })
 })
-
+let prevNumber = ''
+let calculationOperator = ''
+let currentNumber = '0'
  const operators = document.querySelectorAll(".operator")
   operator.forEach ((operator) => {
    operator.addEventListener("click", (event) => {
