@@ -1,5 +1,5 @@
 const numbers = document.querySelectorAll(".number")
-number.forEach ((number) => {
+numbers.forEach ((number) => {
   number.addEventListener("click", () => {
    console.log("number is pressed")
   })
