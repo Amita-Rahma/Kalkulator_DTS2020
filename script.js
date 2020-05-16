@@ -39,16 +39,16 @@ const calculate = () => {
  let result = ''
  switch(calculationOperator) {
   case "+" :
-   result = parseFloat(prevNumber) + parseFloat(currentNumber)
+   result = parseFloat(prevNumber)+parseFloat(currentNumber)
    break
   case "-" :
-   result = parseFloat(prevNumber) - parseFloat(currentNumber)
+   result = prevNumber-currentNumber
    break
   case "*" :
-   result = parseFloat(prevNumber) * parseFloat(currentNumber)
+   result = prevNumber*currentNumber
    break
   case "/" :
-   result = parseFloat(prevNumber) / parseFloat(currentNumber)
+   result = prevNumber/currentNumber
    break
   default:
    return
