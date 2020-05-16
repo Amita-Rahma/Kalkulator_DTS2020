@@ -72,3 +72,11 @@ clearBtn.addEventListener('click', () => {
   clearAll()
   updateScreen(currentNumber)
 })
+
+inputDecimal = (dot) => {
+ if (currentNumber.includes('.')) {
+  return
+ }
+ currentNumber += dot
+}
+
