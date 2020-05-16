@@ -74,9 +74,11 @@ clearBtn.addEventListener('click', () => {
 })
 
 inputDecimal = (dot) => {
- if (currentNumber.includes('.')) {
-  return
- }
  currentNumber += dot
 }
 
+const decimal = document.querySelector('.decimal')
+decimal.addEventListener('click', (event) => {
+ inputDecimal (event.target.value)
+ updateScreen(currentNumber)
+})
