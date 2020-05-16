@@ -56,7 +56,7 @@ const calculate = () => {
 }
 
 const equalSign = document.querySelector('.equal-sign')
-equalSign.addEventListener('click, () => {
+equalSign.addEventListener('click', () => {
   calculate ()
   updateScreen (currentNumber)
 })
